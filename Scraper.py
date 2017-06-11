@@ -21,6 +21,8 @@ def data ( site, param, houses ) :
     return html [ posi : posi + houses ]
 
 
+# import re; bitcoin = re.findall ( r'\d\.\d\d', html.text ); bitcoin [2]
+
 bitcoin = data ( 'dolarhoje.com/bitcoin/', 'id="nacional" value="', 6 )
 
 blockch = data ( 'blockchain.info/address/1QAc9S5EmycqjzzWDc1yiWzr9jJLC8sLiY', '<span data-c="', 9 )
