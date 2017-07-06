@@ -8,8 +8,7 @@ import requests as rq
 
 def data ( site, param, houses ) :
 
-    if ( not site.startswith ( 'http://' ) ):
-        
+    if ( not site.startswith ( 'http://' ) ) :
         site = 'http://' + site
 
     html = rq.get ( site )
